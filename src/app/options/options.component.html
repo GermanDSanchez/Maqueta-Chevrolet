@@ -1,0 +1,14 @@
+<section class="flex justify-center mt-[73px] text-[18.4px] text-text-color-contact tracking-[0.22rem] font-louis">
+  <div *ngFor="let contact of contacts" class="w-1/4 px-12 flex items-center flex-col">
+    <img class="w-[51.5%] cursor-pointer" [src]='contact.icon' alt="">
+    <span class="mt-4 hover:text-hover-footer">{{ contact.text }}</span>
+  </div>
+</section>
+<section class="flex flex-wrap justify-between h-full">
+  <div class="w-1/3 px-12 mt-[59px] mb-[45px] cursor-pointer" *ngFor="let list of lists">
+    <img class="w-full mb-[43.1px]" [src]="list.image" alt="">
+    <span class="text-text-color-title text-[23px] font-louis tracking-wider">{{ list.title }}</span>
+    <hr class="mt-[37px] bg-line-color h-[0.1rem] border-none">
+    <p class="my-1 text-text-color-contact text-[18.4px] font-roboto leading-[29px]">{{ list.text }}</p>
+  </div>
+</section>
